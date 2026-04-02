@@ -12,15 +12,16 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
+const base = import.meta.env.BASE_URL;
 const imageUrls = [
-  "/images/python.png",
-  "/images/aws.png",
-  "/images/azure.png",
-  "/images/powerbi.png",
-  "/images/databricks.png",
-  "/images/spark.png",
-  "/images/airflow.png",
-  "/images/sql.png",
+  base + "images/python.png",
+  base + "images/aws.png",
+  base + "images/azure.png",
+  base + "images/powerbi.png",
+  base + "images/databricks.png",
+  base + "images/spark.png",
+  base + "images/airflow.png",
+  base + "images/sql.png",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
